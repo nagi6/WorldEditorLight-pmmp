@@ -1,0 +1,51 @@
+name: WorldEditorLight
+main: LUNATiCTiME\WorldEditor\MainClass
+version: 1.0.0
+api:
+  - 3.0.0-ALPHA9
+author: LUNATiCTiME
+load: POSTWORLD
+description: Map editor for pmmp
+website: https://twitter.com/lunatictime_
+
+commands:
+  /set:
+    description: 選択した範囲内の全てのブロックを指定したブロックに置き換えます。
+    usage: //set <ブロックのID[:ダメージ値]>
+    permission: op
+  /cut:
+    description: 選択した範囲内の全てのブロックを削除します。
+    usage: //cut
+    permission: op
+  /air:
+    description: 選択した範囲内の指定のブロックを削除します。
+    usage: //air <ブロックのID[:ダメージ値]>
+    permission: op
+  /replace:
+    description: 選択した範囲内の指定のブロックを別のブロックに置き換えます。
+    usage: //replace <変更対象のブロックのID[:ダメージ値]> <ブロックのID[:ダメージ値]>
+    permission: op
+  /sphere:
+    description: 座標1を中心に指定した半径の球を作成します。
+    usage: //sphere <ブロックのID[:ダメージ値]> <半径>
+    permission: op
+  /line:
+    description: 選択した座標を結ぶ線を作成します。
+    usage: //line <ブロックのID[:ダメージ値]>
+    permission: op
+  /desel:
+    description: 選択した座標をリセットします。
+    usage: //desel
+    permission: op
+  /undo:
+    description: ブロックを変更前に戻します。
+    usage: //undo
+    permission: op
+  /pos1:
+    description: 座標1を足元のブロックに設定します。
+    usage: //pos1
+    permission: op
+  /pos2:
+    description: 座標2を足元のブロックに設定します。
+    usage: //pos2
+    permission: op
