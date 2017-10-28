@@ -2,6 +2,7 @@ name: WorldEditorLight
 main: LUNATiCTiME\WorldEditor\MainClass
 version: 1.0.0
 api:
+  - 3.0.0
   - 3.0.0-ALPHA9
 author: LUNATiCTiME
 load: POSTWORLD
