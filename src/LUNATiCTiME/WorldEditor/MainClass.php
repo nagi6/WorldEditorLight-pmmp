@@ -108,7 +108,7 @@ class MainClass extends PluginBase implements Listener {
 			$action = $event->getAction();
 			if ($action == PlayerInteractEvent::LEFT_CLICK_BLOCK or $action == PlayerInteractEvent::RIGHT_CLICK_BLOCK) {
 				$player = $event->getPlayer();
-				if ($player->isOp()) {
+				if ($player->isOp() && $player->getGamemode() == 1) {
 					$name = $player->getName();
 					if (!isset($this->editor[$name][0])) {
 						$block = $event->getBlock();
@@ -125,7 +125,7 @@ class MainClass extends PluginBase implements Listener {
 	{
 		if ($event->getItem()->getId() == $this->config->get("wand")) {
 			$player = $event->getPlayer();
-			if ($player->isOp()) {
+			if ($player->isOp() && $player->getGamemode() == 1) {
 				$name = $player->getName();
 				if (!isset($this->editor[$name][1])) {
 					$block = $event->getBlock();
